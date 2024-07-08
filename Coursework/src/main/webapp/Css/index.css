@@ -1,0 +1,395 @@
+@charset "UTF-8";
+
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1{
+    color:red;
+}
+.navbar{
+    height:80px;
+    background-color: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 50px 0px 100px;
+
+}
+.navbar .logo{
+    font-size:33px;
+    color:#fff;
+    font-weight:600;
+}
+.navbar ul{
+    list-style: none;
+    color:white;
+    display: flex  ;
+}
+.navbar ul li{
+margin:0 5px;
+}
+.navbar ul li a{
+color:#fff;
+text-decoration: none;
+margin-right:80px;
+font-size:22px;
+letter-spacing: 1px;
+padding:8px 10px;
+border-radius:5px;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active{
+    background-color: #fff;
+    color:#1b1b1b;
+    cursor:pointer;
+    transition: all 0.5s ease;
+}
+.admin-title{
+    width:100%;
+    padding:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:7vh;
+}
+.admin-title h2{
+    color: rgb(13, 240, 39);
+    font-family: "Outfit", sans-serif;
+    font-size:50px;
+    font-weight: normal;
+}
+.main-admin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:10px;
+    background-color: rgb(231, 247, 247);
+}
+
+.main-admin .container{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:45vh;
+    background-color: whitesmoke;
+    margin: 35px 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main-admin .container .view{
+    font-size:normal;
+    font-weight: 500;
+    margin-top:30px;
+    font-family: "Roboto", sans-serif;
+    
+}
+.main-admin .container .view a{
+    font-size:40px;
+}
+ .prod-table{
+    width: 100%;
+    padding:10px;
+}
+
+.add-prod{
+    background-color: rgb(238, 61, 61);
+    padding:10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px 10px;
+    position: relative;
+    left: 65vh;
+    top:1vh;
+}
+.add-prod:hover{
+    cursor: pointer;
+    background-color: green;
+    transition: 0.3s ease-in-out;
+}
+.add-prod a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size:25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ .prod-table table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+table td{
+    border: 2px solid black;
+    text-align: left;
+    padding: 8px;
+}
+table th{
+    border: 2px solid black;
+    text-align: left;
+    padding: 8px;
+    background-color: green;
+    color:white;
+}
+table tr:nth-child(even){
+    background-color: #d9d3d3;
+}
+.main-admin .container .view a{
+    text-decoration: none;
+    color:#696cff;
+}
+.main-admin .container .view a:hover{
+    cursor:pointer;
+    color: #3a3541de;
+    transition: 0.3s ease-in-out;
+    
+}
+.main-admin .container .desc{
+    margin-top:8vh;
+    font-family: "Roboto", sans-serif;
+    color: rgb(117, 114, 114);
+}
+
+
+/* Manoj Gautam for home page styling*/
+.image
+{
+	background-image: url('./Images/herosection.jpg');
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	height:650px;
+  	
+  	background-image: linear-gradient(to right, grey,purple);
+}
+
+.image button {
+        /* button stylings  */
+        padding: 20px;
+        width: 300px;
+        text-transform: uppercase;
+        font-size: 17px;
+        background-color: black;
+        color: white;
+        margin-top: 80px;
+        align-items: center;
+        
+    }
+
+.image button:hover {
+        /* on hover effects on button  */
+        background-color: #20272e;
+        cursor: pointer;
+    }
+
+.image_div
+{
+	padding-top:120px;
+}
+.image_text
+{
+	text-align:center;
+	color: #ffff00;
+	font-size: 44px;
+	font-family:cursive;
+	text-decoration:inherit;
+	
+}
+
+.section_main
+{
+	padding:10px;
+}
+.build-prod{
+    margin-top:30px;
+}
+.section_main .build-prod h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+}
+
+.prod-category{
+    margin-top: 20px;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.prod-category .category-1{
+    width: 30%;
+    margin: 10px;
+    padding: 13px;
+    height: 88vh;
+    background-color: bisque;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.prod-category .category-1 .category-img{
+    background-image: url('./Images/keyboard.jpeg');
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
+.about-category{
+    font-size: 22px;
+    font-family: monospace;
+    margin-top: 15px;
+}
+.about-desc{
+    margin-top: 10px;
+}
+ .btn{
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: rgb(249, 39, 39);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 90px;
+    width: 50%;
+    margin-top: 30px;
+    color: whitesmoke;
+    border: none;
+}
+ .btn:hover{
+    background-color: rgb(20, 163, 20);
+    cursor:pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.prod-category .two .category-img-2 img{
+    width: 100%;
+    height: 200px;
+}
+.prod-category .three .category-img-3 img{
+    width: 100%;
+    height: 200px;
+}
+.prod-category .four .category-img-4 img{
+    width: 100%;
+    height: 200px;
+}
+
+/* Blog Section */
+.blog-heading{
+    margin-top: 30px;
+}
+.blog-heading h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+}
+.blog-cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:20px;
+}
+.blog-cards .blg{
+    width: 48%;
+    height: 100vh;
+    background-color: rgb(141, 244, 189);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.build-img{
+padding: 20px;
+}
+.build-img img{
+    width: 100%;
+    height: 300px;
+}
+.journey-desc{
+    margin-left: 20px;
+}
+.blg .journey-desc p{
+    font-size: 22px;
+    font-family: monospace;
+}
+
+/* Hot Sales Section */
+.sales-heading{
+    margin-top: 30px;
+}
+.sales-heading p{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+}
+.sales-box{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    padding: 10px;
+}
+.sales-box .sales-card{
+    width: 32%;
+    height: 105vh;
+    background-color: aqua;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sales-card .prod-img{
+    padding: 15px;
+}
+.sales-card .prod-img img{
+    width: 100%;
+    height: 200px;
+}
+.sales-card .prod-name{
+    padding: 15px;
+}
+.prod-name h2{
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+}
+.prod-cate p{
+    font-size: 22px;
+    font-family: monospace;
+}
+.price .price-head{
+    color: #0d9b0d;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: math;
+    letter-spacing: 1.5px;
+}
+.price strike{
+    margin-left: 10px;
+    
+}
+.price p{
+    font-size: 22px;
+    font-family: monospace;
+}
+.card_two_btn{
+    margin-top:10vh;
+}
+
+.footer_container{
+    background-color: black;
+    color: white;
+    padding: 50px 190px 50px 190px;
+}
+
+.footer_copyright{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
